@@ -1,4 +1,4 @@
-package cx.study.springboot;
+package cx.study;
 
 
 import org.junit.Test;
