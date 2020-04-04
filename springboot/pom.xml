@@ -10,7 +10,7 @@
     </parent>
     <groupId>cx.study</groupId>
     <artifactId>springboot</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>springboot</name>
     <description>Demo project for Spring Boot</description>
 
@@ -98,13 +98,28 @@
 
     <repositories>
         <repository>
-            <id>mvn1</id>
-            <url>http://repo.maven.org/maven2/</url>
-        </repository>
-        <repository>
             <id>alimaven</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>mvn1</id>
+            <url>http://repo.maven.org/maven2/</url>
+        </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>alimaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+
 
 </project>
